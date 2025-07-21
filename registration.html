@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VITS REGISTRATION</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+        }
+
+        .main {
+            background-color: #f1f385;
+            border-radius: 25px;
+            box-shadow: 0 0 20px rgba(199, 18, 18, 0.63);
+            padding: 80px;
+            width: 700px;
+        }
+
+        .main h2 {
+            color: #0df685;
+            margin-bottom: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f516b2;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #21ef21;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <u>
+        <h4>EVENTS REGISTRATION FORM</h4></u>
+        <form action="">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required />
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            
+
+            <label for="mobile">Contact:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required />
+
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="CSE">
+                    CSE
+                </option>
+                <option value="CSM">
+                     CSM
+                </option>
+                <option value="DS">
+                    DS
+                </option>
+               
+            </select>
+             <label for="participation">Participation:</label>
+            <select id="participation" name="participation" required>
+                <option value="Quiz">
+                    Quiz
+                </option>
+                <option value="hackathon">
+                     hackathon
+                </option>
+                <option value="debate">
+                    debate
+                </option>
+               
+            </select>
+            
+            
+            
+
+            
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
